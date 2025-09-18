@@ -1,0 +1,6 @@
+Ein HTML-Element das ich spannend gefunden habe: progress
+
+Das progress-Element zeigt auf einfache Weise den Fortschritt eines Vorgangs, 
+wie z. B. einen Datei-Upload, als Balken an. 
+
+Man kann den Wert dynamisch ändern und ihn mit CSS optisch ansprechend gestalten.
