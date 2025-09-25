@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Die schnellsten Tiere</title>
+
+    <!-- Standard-Theme -->
+    <link rel="stylesheet" href="css/theme-light.css" id="theme-light">
+    <!-- Alternativ-Theme -->
+    <link rel="stylesheet" href="css/theme-accent.css" id="theme-accent" disabled>
+</head>
+<body>
+    <header>
+    <h1>Tier-Info</h1>
+    <nav>
+      <ul>
+        <li><a href="#start">Start</a></li>
+        <li><a href="#tabelle">Tabelle</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div>
+      <h2>Willkommen</h2>
+      <p>Die Tabelle zeigt Spitzengeschwindigkeit und Lebensraum.</p>
+    </div>
+
+    <!-- 1.section -->
+    <section id="tabelle">
+      <h2>Tabelle der 10 schnellsten Tiere</h2>
+      <table>
+        <caption>Übersicht: 10 schnellste Tiere (vereinfacht)</caption>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Tier</th>
+            <th>Spitzengeschwindigkeit</th>
+            <th>Lebensraum</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Wanderfalke</td><td>ca. 390 km/h</td><td>Weltweit außer Antarktis</td></tr>
+          <tr><td>2</td><td>Goldadler</td><td>ca. 320 km/h</td><td>Nordamerika, Eurasien</td></tr>
+          <tr><td>3</td><td>Gepard</td><td>ca. 110 km/h</td><td>Afrika</td></tr>
+          <tr><td>4</td><td>Gabelbock</td><td>ca. 98 km/h</td><td>Nordamerika</td></tr>
+          <tr><td>5</td><td>Springbock</td><td>ca. 88 km/h</td><td>Südliches Afrika</td></tr>
+          <tr><td>6</td><td>Löwe</td><td>ca. 80 km/h</td><td>Afrika</td></tr>
+          <tr><td>7</td><td>Strauß</td><td>ca. 70 km/h</td><td>Afrika</td></tr>
+          <tr><td>8</td><td>Schwertfisch</td><td>ca. 97 km/h</td><td>Tropische Ozeane</td></tr>
+          <tr><td>9</td><td>Schwarzer Marlin</td><td>ca. 80–90 km/h</td><td>Indischer & Pazifischer Ozean</td></tr>
+          <tr><td>10</td><td>Orca</td><td>ca. 55 km/h</td><td>Alle Weltmeere</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 2.section -->
+    <section id="bilder">
+      <h2>Bilder</h2>
+      <div>
+        <img src="images/wanderfalke.jpg" alt="Wanderfalke" width="400" height="300"><b>Wanderfalke</b> 
+        <img src="images/goldadler.jpg" alt="Goldadler" width="300" height="300"><b>Goldadler</b>
+        <img src="images/gepard.jpg" alt="Gepard" width="400" height="300"><b>Gepard</b>
+        <img src="images/gabelbock.jpg" alt="Gabelbock" width="300" height="300"><b>Gabelbock</b>
+        <img src="images/springbock.jpeg" alt="Springbock" width="400" height="300"><b>Springbock</b>
+        <img src="images/löwe.jpg" alt="Löwe" width="350" height="300"><b>Löwe</b>
+        <img src="images/strauss.jpg" alt="Strauß" width="400" height="300"><b>Strauß</b>
+        <img src="images/schwertfisch.jpg" alt="Schwertfisch" width="300" height="300"><b>Schwertfisch</b>
+        <img src="images/marlin.jpg" alt="Marlin" width="400" height="300"><b>Marlin</b>
+        <img src="images/orca.jpg" alt="Orca" width="300" height="300"><b>Orca</b>
+      </div>
+    </section>
+
+    <!-- aside -->
+    <aside>
+      <h3>Hinweis</h3>
+      <p>Die Geschwindigkeiten sind ungefähre Spitzenwerte; Angaben sind stark vereinfacht für Übungszwecke.</p>
+    </aside>
+
+    <!-- 3.section -->
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <form>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">E-Mail</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Nachricht</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Absenden</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Tier-Info — Übungsprojekt</p>
+  </footer>
+</body>
+</html>
