@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>gameXplorer - discover games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <span class="logo">🎮 gameXplorer</span>
+            <ul>
+                <li><a href="index.html" class="active">entdecken</a></li>
+                <li><a href="liste.html">wunschliste</a></li>
+                <li><a href="zufall.html">zufalls-game</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <h1>gaming explorer</h1>
+            <p>durchsuche die datenbank nach namen oder genres.</p>
+            <p style="margin-top: 5px; font-size: 0.9rem; color: #64748b;">
+                <strong>verfügbare spiele:</strong> The Witcher 3, Cyberpunk 2077, Minecraft, Counter-Strike 2, Elden Ring<br>
+                <strong>verfügbare genres:</strong> RPG, Open World, Sci-Fi, Sandbox, Shooter, Taktik, Soulslike
+            </p>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="spiel oder genre eingeben...">
+                <button id="searchButton">suchen</button>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <div id="gameResults" class="game-grid"></div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

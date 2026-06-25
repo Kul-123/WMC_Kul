@@ -1,0 +1,291 @@
+/* moderner dark-mode für gamer, clean und stylisch */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background-color: #0b0f14;
+    color: #cdd4dc;
+    background-image: radial-gradient(circle at top right, #1c2635 0%, #0b0f14 60%);
+    min-height: 100vh;
+}
+
+/* navigation */
+nav {
+    background-color: rgba(21, 29, 39, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 18px 0;
+    border-bottom: 1px solid #1f2d3d;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #00b4d8;
+    font-weight: 800;
+    font-size: 1.4rem;
+    text-shadow: 0 0 10px rgba(0, 180, 216, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+nav a:hover, nav a.active {
+    color: #2ecc71;
+    text-shadow: 0 0 8px rgba(46, 204, 113, 0.4);
+}
+
+/* hauptbereich */
+main {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.hero-section {
+    background: #151d27;
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid #223145;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #94a3b8;
+    font-size: 1rem;
+}
+
+/* eingabefelder & buttons */
+.search-box, .add-item-box {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+    max-width: 550px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 14px;
+    background-color: #0b0f14;
+    border: 1px solid #2a3c54;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #00b4d8;
+    box-shadow: 0 0 8px rgba(0, 180, 216, 0.2);
+}
+
+button {
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: transform 0.1s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+}
+
+.btn-glow {
+    background: linear-gradient(135deg, #00b4d8, #0077b6);
+}
+.btn-glow:hover {
+    box-shadow: 0 5px 15px rgba(0, 180, 216, 0.4);
+}
+
+/* spiele grid karten */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.game-card {
+    background-color: #151d27;
+    border: 1px solid #223145;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.game-card:hover {
+    transform: translateY(-4px);
+    border-color: #3498db;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.game-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.game-card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.game-card h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.genre-tag {
+    background-color: #1f2d3d;
+    color: #00b4d8;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    width: max-content;
+}
+
+.year-tag {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.game-card button {
+    margin-top: auto;
+    background: #3498db;
+    width: 100%;
+    padding: 10px;
+}
+.game-card button:hover {
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+/* wunschliste design */
+#gameList {
+    list-style: none;
+    max-width: 550px;
+    background-color: #151d27;
+    border: 1px solid #223145;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#gameList li {
+    padding: 16px 20px;
+    border-bottom: 1px solid #1f2d3d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+#gameList li:last-child {
+    border-bottom: none;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+}
+.delete-btn:hover {
+    box-shadow: 0 5px 12px rgba(231, 76, 60, 0.4);
+}
+
+/* zufallsseite container */
+.game-detail {
+    background: linear-gradient(145deg, #151d27, #1b2635);
+    padding: 30px;
+    border: 1px solid #00b4d8;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 0 20px rgba(0, 180, 216, 0.15);
+}
+
+.game-detail h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.match-info {
+    margin: 15px 0;
+    border-left: 4px solid #2ecc71;
+    padding-left: 15px;
+}
+
+.match-info p {
+    margin-bottom: 5px;
+    color: #e2e8f0;
+}
+
+.api-note {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: 20px;
+}
+
+.loading {
+    color: #00b4d8;
+    font-weight: 600;
+}
+
+/* helper */
+.hidden {
+    display: none !important;
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    padding: 15px 20px;
+    background: rgba(231, 76, 60, 0.1);
+    border: 1px solid #e74c3c;
+    border-radius: 6px;
+    color: #fc8181;
+    font-weight: 500;
+}

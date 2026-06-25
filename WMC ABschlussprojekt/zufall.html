@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>gameXplorer - lucky generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <span class="logo">🎮 gameXplorer</span>
+            <ul>
+                <li><a href="index.html">entdecken</a></li>
+                <li><a href="liste.html">wunschliste</a></li>
+                <li><a href="zufall.html" class="active">zufalls-game</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <h1>was zocke ich heute?</h1>
+            <p>keine ahnung was du spielen willst? lass den server entscheiden!</p>
+            <button id="randomButton" class="btn-glow">spiel auswürfeln</button>
+        </section>
+
+        <section id="gameDisplay" class="game-detail hidden"></section>
+    </main>
+
+    <script src="zufall.js"></script>
+</body>
+</html>

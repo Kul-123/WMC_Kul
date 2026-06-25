@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>gameXplorer - wunschliste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <span class="logo">🎮 gameXplorer</span>
+            <ul>
+                <li><a href="index.html">entdecken</a></li>
+                <li><a href="liste.html" class="active">wunschliste</a></li>
+                <li><a href="zufall.html">zufalls-game</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <h1>deine wunschliste</h1>
+            <p>hier verwaltest du die spiele, die du noch zocken willst.</p>
+            
+            <div class="add-item-box">
+                <input type="text" id="gameInput" placeholder="eigenes spiel hinzufügen...">
+                <button id="addButton">hinzufügen</button>
+            </div>
+
+            <ul id="gameList"></ul>
+            <p id="emptyMessage" class="hidden">deine wunschliste ist leer!</p>
+        </section>
+    </main>
+
+    <script src="liste.js"></script>
+</body>
+</html>
